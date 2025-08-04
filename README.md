@@ -57,3 +57,25 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Inicialización
+
+Angular 20
+Bun
+
+npm install -g @angular/cli
+
+ng config -g cli.packageManager bun // definimos desde ahora que angular untilizara bun, npm, pnpm, yarn, etc
+
+ng new landing-page-old-school
+    - style: scss
+    - SSR y SSG: yes
+    - zoneless: yes //no se encuentra en angular.json y se provee en el app.config.ts provideZonelessChangeDetection()
+
+bun i -D prettier eslint // Formatter y linter
+bun i -D eslint-config-prettier eslint-plugin-prettier // configuracion y plugin de Prettier para ESLint
+
+ng add angular-eslint // Configuración de ESLint para Angular
+ng lint // para usar el linter de angular y verificar si todo esta bien
+
+ng serve
