@@ -17,7 +17,7 @@
 //   --tipo-principal: Helvetica, Arial, sans-serif;
 //   --tipo-secundaria: Verdana;
     /* Tipografía Windows 95 */
-  --tipo-principal: Tahoma, "Segoe UI", Arial, sans-serif;
+  --tipo-principal: 'MS Sans Serif', Arial, sans-serif;
   --tipo-secundaria: Verdana, Geneva, sans-serif;
 }
 
@@ -151,8 +151,8 @@ body {
   min-height: 100vh;
   font-size: 100%;
   font-family: var(--tipo-principal);
-  color: var(--negro);
-  background-color: var(--blanco);
+  // color: var(--negro);
+  // background-color: var(--blanco);
   /* opcional */
   line-height: 1.4em;
   /* opcional */

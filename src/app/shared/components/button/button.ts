@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './button.scss'
 })
 export class Button {
+  callbackIn = Input();
+  eventOut = Output();
 
+  actionClick() {
+    console.log('click en el boton');
+    this.eventOut.emit(this.callbackIn());
+  }
 }
