@@ -1,7 +1,7 @@
 <!-- style.width="{{ sizeWidth() }}" style.height="{{ sizeHeight() }}" -->
-<div class="window" [ngStyle]="{'width': sizeWidth(), 'height': sizeHeight()}">
+<div class="window" [ngStyle]="{'width': widthWindow(), 'height': heightWindow()}">
     <div class="window-header">
-        <span class="window-title">{{ title() }}</span>
+        <span class="window-title">{{ titleWindow() }}</span>
         <button class="close-button">X</button>
     </div>
     <ng-content></ng-content>

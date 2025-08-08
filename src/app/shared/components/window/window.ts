@@ -10,9 +10,9 @@ import { Component, input } from '@angular/core';
   styleUrl: './window.scss'
 })
 export class Window {
-  title = input<string>('Window Component');
-  sizeWidth = input<string>('500px');
-  sizeHeight = input<string>('500px');
+  titleWindow = input<string>('Window Component');
+  widthWindow = input<string>('500px');
+  heightWindow = input<string>('500px');
 
   // constructor() {
   //   console.log(this.title());

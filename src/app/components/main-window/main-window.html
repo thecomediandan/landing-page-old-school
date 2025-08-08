@@ -1,4 +1,4 @@
-<app-window title="Mi titulo" sizeWidth="500px" sizeHeight="500px">
+<app-window [titleWindow]="mainTitle()" [widthWindow]="`${mainWidth()}px`" [heightWindow]="`${mainHeight()}px`">
     <!-- <app-button (click)="saludar()">Ayuda</app-button> -->
-    <app-menu-vertical></app-menu-vertical>
+    <app-menu-vertical [menuWidth]="menuWidth()" [menuHeight]="mainHeight() - header"></app-menu-vertical>
 </app-window>

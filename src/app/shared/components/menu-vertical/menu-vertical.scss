@@ -3,15 +3,16 @@
   border: 2px solid #fff;
   border-right-color: #808080;
   border-bottom-color: #808080;
-  box-shadow: 2px 2px 0 #808080;
+  // box-shadow: 2px 2px 0 #808080;
   width: 180px;
   height: 472px;
   padding: 8px 0;
-//   font-family: 'MS Sans Serif', Arial, sans-serif;
-  min-height: 100px;
 }
 
 .menu-vertical ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
