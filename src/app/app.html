@@ -1,4 +1,41 @@
 <app-desktop>
-  <app-main-window mainTitle="Código Murciélago Mentorías" [mainWidth]="700" [mainHeight]="510"></app-main-window>
+  <app-main-window mainTitle="Código Murciélago" [mainWidth]="700" [mainHeight]="510">
+    <div class="main-window-body">
+      <div class="main-window-content">
+        <app-card-info [cardWidth]="220" titleCard="Mentorías individuales">
+          <p>Mentoría 1:1 en desarrollo frontend, arquitectura y buenas prácticas personalizadas para tu stack.</p>
+          <div [ngStyle]="{ 'justify-self': 'end' }">
+            <app-button>Mas información</app-button>
+          </div>
+        </app-card-info>
+        <app-card-info [cardWidth]="220" titleCard="Mentorías a grupos">
+          <p>Capacitación técnica para equipos, auditoría de arquitectura y diseño, optimización de procesos.</p>
+          <div [ngStyle]="{ 'justify-self': 'end' }">
+            <app-button>Mas información</app-button>
+          </div>
+        </app-card-info>
+        <app-card-info [cardWidth]="180" titleCard="Calendario">
+          <input type="datetime-local" name="datetime">
+          <div [ngStyle]="{ 'justify-self': 'center', 'margin-top': '4px' }">
+            <app-button><span [ngStyle]="{'font-weight': 'bold'}">Reservar</span></app-button>
+          </div>
+        </app-card-info>
+        <app-card-info [cardWidth]="130" titleCard="Testimonios">
+          <p>En una hora resolví meses de dudas.</p>
+          <p [ngStyle]="{ 'margin-top': '4px' }">- MonchitoDev</p>
+        </app-card-info>
+        <app-card-info [cardWidth]="110" titleCard="Acerca de">
+          <div [ngStyle]="{ 'text-align': 'center', 'display': 'flex', 'flex-direction': 'column', 'align-items': 'center', 'gap': '8px' }">
+            <img src="smiley-face.ico" alt="Logo Código Murciélago" [ngStyle]="{ width: '50px', height: '50px', 'object-fit': 'contain' }">
+            <a href="#">LinkedIn</a>
+            <a href="#">Youtube</a>
+          </div>
+        </app-card-info>
+      </div>
+      <div class="main-window-footer">
+        Con amor niñita, desde Código Murciélago 2025.
+      </div>
+    </div>
+  </app-main-window>
 </app-desktop>
 <router-outlet />

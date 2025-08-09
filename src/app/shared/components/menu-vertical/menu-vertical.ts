@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
-import { Button } from '@shared/components/button/button';
+import { IconMenu } from '../icon-menu/icon-menu';
 
 @Component({
   selector: 'app-menu-vertical',
-  imports: [Button, CommonModule],
+  imports: [CommonModule, IconMenu],
   templateUrl: './menu-vertical.html',
   styleUrl: './menu-vertical.scss'
 })

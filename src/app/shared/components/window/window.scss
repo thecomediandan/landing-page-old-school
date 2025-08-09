@@ -9,8 +9,27 @@
   min-height: 500px;
   display: flex;
   flex-direction: column;
-  font-family: 'MS Sans Serif', Arial, sans-serif;
   overflow: hidden;
+}
+
+.window-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 4px;
+
+  img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.window-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .window-header {
@@ -33,7 +52,7 @@
   user-select: none;
 }
 
-.close-button {
+.action-button {
   width: 22px;
   height: 22px;
   background: #c0c0c0;
@@ -45,10 +64,11 @@
   color: #222;
   cursor: pointer;
   padding: 0;
-  margin-left: 8px;
+  margin-left: 4px;
   box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #808080;
   outline: none;
   transition: none;
+  font-weight: bold;
 
   &:active {
     border-top-color: #808080;

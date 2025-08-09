@@ -1,4 +1,7 @@
-<app-window [titleWindow]="mainTitle()" [widthWindow]="`${mainWidth()}px`" [heightWindow]="`${mainHeight()}px`">
+<app-window class="main-window" [titleWindow]="mainTitle()" [widthWindow]="`${mainWidth()}px`" [heightWindow]="`${mainHeight()}px`">
     <!-- <app-button (click)="saludar()">Ayuda</app-button> -->
-    <app-menu-vertical [menuWidth]="menuWidth()" [menuHeight]="mainHeight() - header"></app-menu-vertical>
+     <div class="main-window-container">
+         <app-menu-vertical [menuWidth]="150" [menuHeight]="mainHeight() - header"></app-menu-vertical>
+         <ng-content></ng-content>
+     </div>
 </app-window>

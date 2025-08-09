@@ -1,8 +1,15 @@
 <!-- style.width="{{ sizeWidth() }}" style.height="{{ sizeHeight() }}" -->
 <div class="window" [ngStyle]="{'width': widthWindow(), 'height': heightWindow()}">
     <div class="window-header">
-        <span class="window-title">{{ titleWindow() }}</span>
-        <button class="close-button">X</button>
+        <div class="window-icon">
+            <img src="program.ico" alt="Icon">
+            <span class="window-title">{{ titleWindow() }}</span>
+        </div>
+        <div class="window-controls">
+            <button class="action-button">_</button>
+            <button class="action-button">□</button>
+            <button class="action-button">x</button>
+        </div>
     </div>
     <ng-content></ng-content>
 </div>

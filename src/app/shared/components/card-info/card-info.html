@@ -1,0 +1,8 @@
+<div class="card-info" [ngStyle]="{ width: cardWidth() + 'px' }">
+    <div class="card-info-header">
+        <span>{{ titleCard() }}</span>
+    </div>
+    <div class="card-info-body">
+        <ng-content></ng-content>
+    </div>
+</div>

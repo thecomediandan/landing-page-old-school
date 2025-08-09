@@ -1,0 +1,21 @@
+.card-info {
+  border: 2px solid #808080;
+  box-shadow: 2px 1px 1px black;
+  width: 150px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.card-info-header {
+  padding: 4px 8px;
+  border-bottom: 2px solid #808080;
+  font-weight: bold;
+  box-shadow: 0 1px 0 #fff inset;
+}
+
+.card-info-body {
+  padding: 8px;
+  border: 1px inset #c0c0c0;
+  font-size: 1em;
+  line-height: 1;
+}
