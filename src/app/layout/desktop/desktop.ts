@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-desktop',
-  imports: [],
+  imports: [
+    CommonModule
+  ],
   templateUrl: './desktop.html',
   styleUrl: './desktop.scss'
 })

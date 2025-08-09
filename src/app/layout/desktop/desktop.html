@@ -1,7 +1,29 @@
 <main class="desktop-container">
-    <div class="desktop-body">
+    <div class="desktop-body" 
+    [ngStyle]="{
+        'background-color': '#218080',
+        'background-image': 'url(wallpaper.jpg)',
+        'background-size': 'contain',
+        'background-repeat': 'no-repeat',
+        'background-position': 'center'
+    }">
         <ng-content />
     </div>
 
-    <div class="desktop-footer">Panel de Windows</div>
+    <div class="desktop-footer">
+        <div class="taskbar">
+            <button class="start-button">
+                <img src="start-icon.ico" alt="Inicio" class="start-icon" />
+                Inicio
+            </button>
+            <div class="taskbar-tasks">
+                <!-- Ejemplo de tareas abiertas -->
+                <button class="taskbar-task">Ventana 1</button>
+                <button class="taskbar-task">Ventana 2</button>
+            </div>
+            <div class="taskbar-clock">
+                14:32
+            </div>
+        </div>
+    </div>
 </main>

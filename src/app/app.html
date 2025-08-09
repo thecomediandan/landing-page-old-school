@@ -1,7 +1,10 @@
 <app-desktop>
   <app-main-window mainTitle="Código Murciélago" [mainWidth]="700" [mainHeight]="510">
     <div class="main-window-body">
-      <div class="main-window-content">
+      <!-- Como apunte app.ts debería tener las dimesiones de la ventana, para poder enviarselo a 
+       main-window-content y poder controlar el scroll teniendo encuenta que tambien necesitaremos
+       la altura del main-window-footer -->
+      <div class="main-window-content" [ngStyle]="{ 'max-height': '438.578px' }">
         <app-card-info [cardWidth]="220" titleCard="Mentorías individuales">
           <p>Mentoría 1:1 en desarrollo frontend, arquitectura y buenas prácticas personalizadas para tu stack.</p>
           <div [ngStyle]="{ 'justify-self': 'end' }">

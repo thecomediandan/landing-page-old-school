@@ -10,10 +10,41 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: start;
         gap: 16px;
         padding: 16px;
         overflow: auto;
-        // height: 438.578px;
+        // max-height: 438.578px;
+        max-height: calc(100% - 43.41px); // Ajusta el espacio para el footer
+
+        /* Scrollbar estilo Windows 95 */
+        &::-webkit-scrollbar {
+            width: 18px;
+            background: #c0c0c0;
+            border-left: 2px solid #fff;
+            border-right: 2px solid #808080;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #e0e0e0;
+            border: 2px solid #fff;
+            border-right-color: #808080;
+            border-bottom-color: #808080;
+            box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #808080;
+            border-radius: 0;
+        }
+
+        &::-webkit-scrollbar-thumb:active {
+            background: #b0b0b0;
+            border-top-color: #808080;
+            border-left-color: #808080;
+            border-bottom-color: #fff;
+            border-right-color: #fff;
+        }
+
+        &::-webkit-scrollbar-corner {
+            background: #c0c0c0;
+        }
     }
 
     .main-window-footer {
