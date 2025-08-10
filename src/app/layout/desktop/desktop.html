@@ -13,13 +13,15 @@
     <div class="desktop-footer">
         <div class="taskbar">
             <button class="start-button">
-                <img src="start-icon.ico" alt="Inicio" class="start-icon" />
-                Inicio
+                <img src="icons8-ventanas-95.svg" [ngStyle]="{ width: '32px', height: '32px'}" alt="Inicio" class="start-icon" />
+                <span [ngStyle]="{ 'font-weight': 'bold' }">Inicio</span>
             </button>
             <div class="taskbar-tasks">
                 <!-- Ejemplo de tareas abiertas -->
-                <button class="taskbar-task">Ventana 1</button>
-                <button class="taskbar-task">Ventana 2</button>
+                <button class="taskbar-task" [ngStyle]="{ display: 'flex', alignItems: 'center', gap: '4px' }">
+                    <img src="program.ico" [ngStyle]="{ width: '16px', height: '16px', display: 'inline-block' }" alt="Tarea" class="start-icon" />
+                    <span>Código Murciélago</span>
+                </button>
             </div>
             <div class="taskbar-clock">
                 14:32
